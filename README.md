@@ -1,5 +1,7 @@
 # Student ID Card Generator
 
+**Team: Ignite**
+
 A simple web app built with HTML, CSS and basic JavaScript. Users enter their details and upload a photo, and the app instantly generates a digital student ID card that can be printed or saved as a PDF.
 
 ## Features
