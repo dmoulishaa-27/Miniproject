@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student ID Card Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>Student ID Card Generator</h1>
+<p>Fill in your details and create your ID card.</p>
+</header>
+
+<main>
+<form id="idForm">
+<h2>Student Details</h2>
+
+<label for="name">Full Name</label>
+<input type="text" id="name" placeholder="Enter your name" required>
+
+<label for="roll">Roll Number</label>
+<input type="text" id="roll" placeholder="Enter roll number" required>
+
+<label for="course">Course</label>
+<input type="text" id="course" placeholder="Example: B.Tech CSE" required>
+
+<label for="year">Year</label>
+<select id="year" required>
+<option value="">Select year</option>
+<option value="1st Year">1st Year</option>
+<option value="2nd Year">2nd Year</option>
+<option value="3rd Year">3rd Year</option>
+<option value="4th Year">4th Year</option>
+</select>
+
+<label for="phone">Phone Number</label>
+<input type="tel" id="phone" placeholder="Enter phone number" required>
+
+<label for="email">Email</label>
+<input type="email" id="email" placeholder="Enter email" required>
+
+<label for="photo">Profile Photo</label>
+<input type="file" id="photo" accept="image/*" required>
+
+<button type="submit">Generate ID Card</button>
+</form>
+
+<section class="preview">
+<div class="card" id="card">
+<div class="card-top">
+<h3>ABC INSTITUTE OF TECHNOLOGY</h3>
+<p>Student Identity Card</p>
+</div>
+<div class="card-body">
+<img id="cardPhoto" src="" alt="Student photo">
+<div class="info">
+<h4 id="cardName">Student Name</h4>
+<p><span>Roll No:</span> <b id="cardRoll">--</b></p>
+<p><span>Course:</span> <b id="cardCourse">--</b></p>
+<p><span>Year:</span> <b id="cardYear">--</b></p>
+<p><span>Phone:</span> <b id="cardPhone">--</b></p>
+<p><span>Email:</span> <b id="cardEmail">--</b></p>
+</div>
+</div>
+<div class="card-bottom">
+<p>Valid for the current academic year</p>
+</div>
+</div>
+<button id="printBtn" type="button">Print ID Card</button>
+</section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
